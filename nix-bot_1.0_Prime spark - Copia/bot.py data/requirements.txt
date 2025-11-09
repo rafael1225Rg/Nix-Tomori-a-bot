@@ -1,0 +1,6 @@
+groq
+websockets
+edge-tts
+pyttsx3
+requests
+aiofiles
