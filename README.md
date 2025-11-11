@@ -1,22 +1,32 @@
-# Nix-Tomori-a-bot
-disponibilização de uma projeto pessoal, uma bot que responde chat da ttv, ela se chama nix mas seu nome pode ser alterado, junto de sua personalidade e etc. por favor, altere as suas preencha com uma conta e token para a bot usar
+🤖 Nix – Bot de Chat para Twitch (Feita em Python)
+Este é um projeto pessoal: uma bot chamada Nix, desenvolvida em Python, que responde automaticamente ao chat da Twitch. Você pode alterar o nome da bot, sua personalidade e outros comportamentos conforme desejar.
+⚙️ Como configurar
+- Pré-requisitos:
+- Python 3.13.5 instalado no seu PC
+- API Key da Groq salva no Windows
+- Conta da Twitch e token de autenticação
+- Instalação:
+- Após configurar o básico, execute o arquivo run.bat
+- Ele instalará todas as dependências automaticamente
+- A Nix possui suporte a voz via TTS offline (pode ser desativado alterando tts = true para false)
+🧠 Como a Nix funciona
+- A Nix responde quando é mencionada no chat com a palavra "nix" ou com o nickname da conta Twitch logada (ex: nix_bot)
+- Na área chamada PERSONA, você pode definir a personalidade da Nix. Exemplo:
+"você se chama nix tomori"
+- Sempre use aspas ("") e não apague nada fora delas, pois isso pode causar erros.
+- A função de pesquisa permite que a Nix busque informações quando mencionada com a palavra "pesquise", mas essa funcionalidade está com problemas e pode não funcionar corretamente.
+🧠 Tipos de memória da Nix
+- Memória de contexto:
+Lembra das últimas 20 mensagens de cada usuário para manter o contexto da conversa.
+- Memória por palavras-chave:
+Quando alguém diz algo como "eu gosto", ela armazena o que vem depois como uma preferência.
+- Memória com comandos:
+Usa comandos como !lembrar e !esquecer para guardar ou apagar informações prioritárias.
+Exemplo:
+nix !lembrar meu jogo favorito é Red Dead
+nix !esquecer meu jogo favorito
+- Memória comum:
+Aprende sobre usuários específicos, como piadas internas, comportamentos e até apelidos.
 
-A nix responde quando for mencionado "nix" em qual quer frase ou o nick da twitch em que vc logou ela ex: "nix_bot"
-Na área chamada PERSONA vc pode alterar a personalidade da nix "você se chama nix tomori" sempre usando "" e não apaque nada pois pode ser sujeito a erros
-A nix tem uma função de pesquisa que toda vez que ela for mencionada junto de "pesquise" ela irá ler oq vier dps disso e pesquisar mas está com problemas e não funciona
-A nix guarda informações a curto e longo prazo, são 4 tipos de memoria
-
-1-memoria simples de contexto, ela lembra de das 20 ultimas mensagens de um usuario para criar um contexto de um conversa
-
-2-ela lembra de coisas com palavras chave. "eu gosto" ai ela guarda a info sobre o que vier depois
-
-3-ela tem uma memoria com comando com !lembrar e !esquecer, ela irá ter essa memoria como prioridade ex: "nix !lembrar meu jogo favorito é red dead" e assim ela guar informação disso para sempre e !esquecer junto da msm coisa faz ela esquecer
-
-4- e ela tem uma memoria comum, ela esquelhe coisas para lembrar sobre usuarios especificos como piadas internas e comportamentos de pessoas especificas, pode até aprender a usar apelidos
-
-para ter acesso a primeira versão vc precisa de uma API key da groq salva no seu windows, do python 3.13.5 instalado no pc, caso não saiba fazer tudo, dê a uma IA que analise arquivos para que ela possa te ajudar pois não é tão intuitivo
-
-IMPORTANTE quanto terminar de fazer o basico, inicie a nix com o run.bat, ele irá baixar tudo a dependencias da nix para ela rodar no seu pc, ela ter voz por tts offline e é possivel desativar mudando tts de true para false
-
-isso é tudo oq precisa saber sobre a nix
-resumo: bot chamada nix que responde seu chat na twitch
+📌 Resumo
+Bot chamada Nix, feita em Python, que responde ao chat da Twitch com memória contextual, comandos personalizados e personalidade configurável
